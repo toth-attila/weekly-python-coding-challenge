@@ -37,11 +37,8 @@ if __name__ == "__main__":
     
     files = getfiles(cwd)
 
-    for f in files:
-        out.append(f)
-    
-    for d in directories:
-        out.append(d)
+    out.extend(files)
+    out.extend(directories)
 
     out.sort()
 
